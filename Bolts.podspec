@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Tasks' do |ss|
-    ss.ios.source_files = "Bolts/**/*.[hm]"
+    ss.ios.source_files = "Bolts/Common/*.[hm]"
     ss.ios.public_header_files = "Bolts/Common/*.h"
 
     ss.osx.source_files = "Bolts/Common/*.[hm]"
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AppLinks' do |ss|
-    ss.ios.source_files = "Bolts/**/*.[hm]"
-    ss.ios.public_header_files = "Bolts/**/*.h"
+    ss.ios.source_files = "Bolts/iOS/*.[hm]"
+    ss.ios.public_header_files = "Bolts/iOS/*.h"
   end
 end
